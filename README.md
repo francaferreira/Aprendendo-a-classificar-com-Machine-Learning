@@ -1,4 +1,4 @@
-# Projeto de Machine Learning: Previsão de Adesão a Investimentos Bancários
+# 🏦 Projeto de Machine Learning: Previsão de Adesão a Investimentos Bancários
 
 Este projeto utiliza técnicas de Machine Learning para prever se clientes de um banco vão aderir a um investimento após uma campanha de marketing, com base em características demográficas e comportamentais.
 
@@ -28,7 +28,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn plotly
 
 ## 🔍 Passo a Passo Explicado
 
-### 1. Leitura dos Dados
+### 📊 1. Leitura dos Dados
 Os dados são carregados de um arquivo CSV contendo informações como:
 - `idade`, `estado_civil`, `escolaridade`
 - `saldo` bancário, `inadimplencia`
@@ -40,20 +40,20 @@ import pandas as pd
 dados = pd.read_csv('marketing_investimento.csv')
 ```
 
-### 2. Análise Exploratória
+### 📊 2. Análise Exploratória
 Exploramos visualmente os dados para entender padrões:
 
-#### Variáveis Categóricas
+#### 🔠 Variáveis Categóricas
 - **Estado Civil**: Gráficos de barras mostram a distribuição entre casados, solteiros e divorciados.
 - **Escolaridade**: Comparação entre níveis médio e superior.
 - **Inadimplência**: Proporção de clientes com histórico de inadimplência.
 
-#### Variáveis Numéricas
+#### 🔠 Variáveis Numéricas
 - **Idade**: Histograma para ver a faixa etária predominante.
 - **Saldo**: Distribuição dos saldos bancários.
 - **Tempo desde último contato**: Frequência de contatos recentes.
 
-### 3. Preparação dos Dados
+### ⚙️ 3. Preparação dos Dados
 #### Codificação de Variáveis Categóricas
 Transformamos texto em números:
 - "sim" → 1, "não" → 0
@@ -62,7 +62,7 @@ Transformamos texto em números:
 #### Normalização
 Variáveis numéricas como `saldo` e `idade` são escalonadas para evitar viés em modelos sensíveis a magnitudes.
 
-### 4. Divisão dos Dados
+### 📊 4. Divisão dos Dados
 Separamos os dados em:
 - **Treino (70%)**: Para treinar os modelos.
 - **Teste (30%)**: Para avaliar o desempenho.
@@ -72,7 +72,7 @@ from sklearn.model_selection import train_test_split
 X_treino, X_teste, y_treino, y_teste = train_test_split(X, y, test_size=0.3)
 ```
 
-### 5. Modelos de Classificação
+### 📊 5. Modelos de Classificação
 Treinamos três algoritmos:
 
 #### a) Regressão Logística
@@ -99,7 +99,7 @@ Usamos métricas para comparar:
 | KNN               | 83%      | 81%      | 78%    | 79%      |
 | Árvore de Decisão | 87%      | 86%      | 85%    | 85%      |
 
-#### Matriz de Confusão
+#### 📈 Matriz de Confusão
 Mostra acertos (diagonal) vs. erros (fora da diagonal):
 ```
 [[ Verdadeiros Negativos | Falsos Positivos  ]
@@ -111,14 +111,14 @@ Mostra acertos (diagonal) vs. erros (fora da diagonal):
 - **Insights**: Clientes com saldos mais altos e contatos recentes tendem a aderir mais.
 - **Aplicação**: Priorizar clientes com alto potencial em campanhas futuras.
 
-## 📊 Como Executar
+## Como Executar
 1. Baixe o dataset e o notebook.
 2. Execute todas as células do Jupyter Notebook.
 3. Veja os gráficos interativos gerados pelo Plotly!
 
 **Autor**: Jefferson Ferreira 
 **Contato**: jfrancaferreira10@gmail.com 
-**LinkedIn**: [Meu-perfil](https://www.linkedin.com/in/jefferson-ferreira-ds/)  
+**LinkedIn**: [meu-perfil](https://www.linkedin.com/in/jefferson-ferreira-ds/)  
 
 ## 🔗 Referências
 - [Documentação do scikit-learn](https://scikit-learn.org/stable/)
