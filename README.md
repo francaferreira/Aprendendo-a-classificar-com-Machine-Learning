@@ -116,6 +116,10 @@ Mostra acertos (diagonal) vs. erros (fora da diagonal):
 2. Execute todas as células do Jupyter Notebook.
 3. Veja os gráficos interativos gerados pelo Plotly!
 
+**Autor**: Jefferson Ferreira 
+**Contato**: jfrancaferreira10@gmail.com 
+**LinkedIn**: [Meu-perfil](https://www.linkedin.com/in/jefferson-ferreira-ds/)  
+
 ## 🔗 Referências
 - [Documentação do scikit-learn](https://scikit-learn.org/stable/)
 - [Pandas User Guide](https://pandas.pydata.org/docs/)
